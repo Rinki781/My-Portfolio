@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinki | Data Science & Software Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --bg-dark: #030712;
+            --card-dark: #0f172a;
+            --accent: #6366f1;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            color: #f3f4f6;
+        }
+
+        .nav-link.active {
+            color: var(--accent) !important;
+            font-weight: 700;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-8px);
+            background: rgba(15, 23, 42, 0.8);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px -10px #4f46e5;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #030712; }
+        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 10px; }
+    </style>
+</head>
+<body class="selection:bg-indigo-500/30">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-slate-950/90 border-b border-white/5 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter gradient-text">RINKI.</a>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-400">
+                <a href="#home" class="nav-link hover:text-white transition">Home</a>
+                <a href="#about" class="nav-link hover:text-white transition">About</a>
+                <a href="#skills" class="nav-link hover:text-white transition">Skills</a>
+                <a href="#projects" class="nav-link hover:text-white transition">Projects</a>
+                <a href="#certifications" class="nav-link hover:text-white transition">Certifications</a>
+                <a href="#contact" class="nav-link hover:text-white transition">Contact</a>
+            </div>
+            <a href="mailto:rinkimaheraniya29@gmail.com" class="text-slate-400 hover:text-white transition">
+                <i class="fas fa-envelope text-xl"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 px-6 relative">
+        <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight">Hi,I'm <span class = "gradient-text">Rinki</span></h1>
+            <h2 class="text-xl md:text-2xl font-semibold text-indigo-400 mb-8 uppercase tracking-widest">Data Science | Machine Learning | Software Development</h2>
+            <p class="text-slate-400 text-lg leading-relaxed mb-10 max-w-3xl mx-auto">
+                I am a B.Tech Computer Science Engineering (AI & ML) student with a strong interest in Data Science, Machine Learning, Data Analytics, and Software Development. I enjoy learning new technologies, building practical projects, and solving problems through data-driven approaches.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-12">
+                <a href="#projects" class="btn-primary px-10 py-4 rounded-xl font-bold text-white shadow-lg">View Projects</a>
+                <a href="Rinki_Resume.pdf" download class="px-10 py-4 glass-card rounded-xl font-bold border border-white/10 hover:bg-white/5 transition flex items-center gap-2">
+                    <i class="fas fa-file-pdf text-red-500"></i> Download Resume
+                </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center gap-10 text-2xl text-slate-500">
+                <a href="https://github.com/Rinki781" target="_blank" class="hover:text-white transition-all transform hover:-translate-y-1"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/rinkimaheraniya" target="_blank" class="hover:text-[#0077b5] transition-all transform hover:-translate-y-1"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rinkimaheraniya29@gmail.com" class="hover:text-red-400 transition-all transform hover:-translate-y-1"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-slate-900/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 underline decoration-indigo-500 decoration-4 underline-offset-8">About Me</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                        I am a focused Computer Science student currently maintaining a <strong>9.1 CGPA</strong> at Dronacharya College of Engineering. With a strong foundation in programming and analytical thinking, I am continuously developing my expertise in Data Science, Machine Learning, and Software Development. I have gained practical experience through academic and personal projects involving data analysis, Python programming, and responsive web development. Committed to continuous learning, I actively strengthen my technical skills through hands-on projects, professional certifications, and consistent practice in Data Structures and Algorithms. I strive to build reliable, efficient, and user-focused solutions while expanding my knowledge of modern technologies.
+                    </p>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-start gap-3"><i class="fas fa-database text-indigo-500 mt-1"></i> Exploratory Data Analysis & Analytics.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-brain text-indigo-500 mt-1"></i> Machine Learning Fundamentals & Logic.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-code text-indigo-500 mt-1"></i> Data Structures & Algorithms.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-laptop-code text-indigo-500 mt-1"></i> Hands-on Project Development.</li>
+                    </ul>
+                </div>
+
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3 underline decoration-indigo-500 decoration-4 underline-offset-8">Education</h2>
+                    <div class="space-y-6">
+                        <div class="glass-card p-6 rounded-2xl border-l-4 border-l-indigo-500">
+                            <h3 class="font-bold text-lg">B.Tech - CSE (AI & ML)</h3>
+                            <p class="text-indigo-400 text-sm mb-1">Dronacharya College of Engineering</p>
+                            <p class="text-slate-500 text-xs font-bold uppercase tracking-tighter">Current CGPA: 9.1</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl border-l-4 border-l-slate-600">
+                            <h3 class="font-bold text-lg">Class XII</h3>
+                            <p class="text-slate-400 text-sm mb-1">Govt. Girls Senior Secondary School, Gurugram</p>
+                            <p class="text-slate-500 text-xs font-bold uppercase tracking-tighter">Score: 90.8%</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl border-l-4 border-l-slate-600">
+                            <h3 class="font-bold text-lg">Class X</h3>
+                            <p class="text-slate-400 text-sm mb-1">Lord Krishna Convent School, Gurugram</p>
+                            <p class="text-slate-500 text-xs font-bold uppercase tracking-tighter">Score: 93%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center text-4xl font-bold mb-16 tracking-tight">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Programming -->
+                <div class="glass-card p-8 rounded-3xl" data-aos="fade-up">
+                    <h3 class="text-indigo-400 font-bold mb-6 flex items-center gap-2 text-xl"><i class="fas fa-code"></i> Programming</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">Python</span>
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">Java</span>
+                    </div>
+                </div>
+                <!-- Data Science -->
+                <div class="glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-indigo-400 font-bold mb-6 flex items-center gap-2 text-xl"><i class="fas fa-chart-line"></i> Data Science</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">NumPy</span>
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">Pandas</span>
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">Matplotlib</span>
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">ML Fundamentals</span>
+                    </div>
+                </div>
+                <!-- Development -->
+                <div class="glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-indigo-400 font-bold mb-6 flex items-center gap-2 text-xl"><i class="fas fa-layer-group"></i> Web & Database</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">HTML5</span>
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">CSS3</span>
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">MySQL</span>
+                        <span class="bg-white/5 px-4 py-2 rounded-lg text-sm border border-white/5">Git / GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-slate-900/20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center text-4xl font-bold mb-16 tracking-tight">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Titanic EDA -->
+                <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" data-aos="fade-up">
+                    <div class="h-52 overflow-hidden border-b border-white/5">
+                        <img src="images/titanic-eda.png" alt="Titanic EDA" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">Titanic EDA Analysis</h3>
+                        <p class="text-slate-400 text-sm mb-6">EDA using Python to clean data and visualize survival trends using Matplotlib and Pandas.</p>
+                        <a href="https://github.com/Rinki781" target="_blank" class="btn-primary inline-block w-full text-center py-3 rounded-lg text-sm font-bold text-white transition">View on GitHub</a>
+                    </div>
+                </div>
+                <!-- Amazon Clone -->
+                <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-52 overflow-hidden border-b border-white/5">
+                        <img src="images/amazon-clone.png" alt="Amazon Clone" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">Amazon Homepage Clone</h3>
+                        <p class="text-slate-400 text-sm mb-6">A Amazon page recreation focusing on CSS and HTML5.</p>
+                        <a href="https://github.com/Rinki781" target="_blank" class="btn-primary inline-block w-full text-center py-3 rounded-lg text-sm font-bold text-white transition">View on GitHub</a>
+                    </div>
+                </div>
+                <!-- Flipkart Clone -->
+                <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-52 overflow-hidden border-b border-white/5">
+                        <img src="images/flipkart-clone.png" alt="Flipkart Clone" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">Flipkart Clone</h3>
+                        <p class="text-slate-400 text-sm mb-6">Developed UI components including navigation bars and product grids for Flipkart.</p>
+                        <a href="https://github.com/Rinki781" target="_blank" class="btn-primary inline-block w-full text-center py-3 rounded-lg text-sm font-bold text-white transition">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-center text-3xl font-bold mb-12">Certifications</h2>
+            <div class="grid gap-4">
+                <div class="glass-card p-6 rounded-2xl flex items-center gap-6" data-aos="fade-right">
+                    <div class="w-14 h-14 bg-indigo-500/10 flex items-center justify-center text-indigo-400 rounded-xl">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Programming Using Python</h4>
+                        <p class="text-slate-500 text-sm uppercase tracking-widest">Infosys Springboard</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex items-center gap-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-indigo-500/10 flex items-center justify-center text-indigo-400 rounded-xl">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Programming in C</h4>
+                        <p class="text-slate-500 text-sm uppercase tracking-widest">Infosys Springboard</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex items-center gap-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-indigo-500/10 flex items-center justify-center text-indigo-400 rounded-xl">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Soft Skills and Personality Development</h4>
+                        <p class="text-slate-500 text-sm uppercase tracking-widest">NPTEL</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex items-center gap-6" data-aos="fade-right" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-indigo-500/10 flex items-center justify-center text-indigo-400 rounded-xl">
+                        <i class="fas fa-award text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Machine Learning Using Python</h4>
+                        <p class="text-slate-500 text-sm uppercase tracking-widest">Completed – July 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-indigo-600 text-white rounded-t-[60px]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-8 tracking-tighter">Get In Touch</h2>
+            <p class="text-indigo-100 mb-12 text-lg">I'm currently seeking internship opportunities where I can contribute and grow.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="mailto:rinkimaheraniya29@gmail.com" class="bg-white/10 p-10 rounded-3xl transition-all hover:bg-white/20">
+                    <i class="fas fa-envelope text-3xl mb-4"></i>
+                    <p class="font-bold uppercase tracking-widest text-sm">Email</p>
+                    <p class="text-xs mt-2 truncate">rinkimaheraniya29@gmail.com</p>
+                </a>
+                <a href="https://linkedin.com/in/rinkimaheraniya" target="_blank" class="bg-white/10 p-10 rounded-3xl transition-all hover:bg-white/20">
+                    <i class="fab fa-linkedin text-3xl mb-4"></i>
+                    <p class="font-bold uppercase tracking-widest text-sm">LinkedIn</p>
+                    <p class="text-xs mt-2">rinkimaheraniya</p>
+                </a>
+                <a href="https://github.com/Rinki781" target="_blank" class="bg-white/10 p-10 rounded-3xl transition-all hover:bg-white/20">
+                    <i class="fab fa-github text-3xl mb-4"></i>
+                    <p class="font-bold uppercase tracking-widest text-sm">GitHub</p>
+                    <p class="text-xs mt-2">Rinki781</p>
+                </a>
+            </div>
+            
+            <p class="mt-24 text-indigo-200 text-sm font-medium tracking-widest">&copy; 2026 Rinki. Built with focus & consistency.</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({ duration: 800, once: true });
+
+        // Scroll Spy Logic
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            let current = "";
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
